@@ -45,7 +45,7 @@ export default function Home() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
-          <Button onClick={handleSearch} size='sm' variant='outline'>
+          <Button onClick={handleSearch} size='default' variant='outline' className='bg-gray-900 text-white'>
             Search
           </Button>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
         </h1>
 
         <div className='items-center hidden gap-2 md:ml-auto md:flex'>
-          <Button onClick={refreshCocktails} size='sm' variant='outline'>
+          <Button onClick={refreshCocktails} size='default' variant='outline' className='bg-gray-900 text-white'>
             Refresh
           </Button>
         </div>
@@ -78,12 +78,12 @@ export default function Home() {
                   className='w-full h-auto rounded-md'
                 />
               </CardContent>
-              <CardFooter>
-                {isFavorite ? null : (
-                  <Button onClick={() => addToFavorites(cocktail)} size='sm' variant='outline'>
-                    Add to Favorites
-                  </Button>
-                )}
+              <CardFooter className='flex justify-center'>
+                  {isFavorite ? null : (
+                    <Button onClick={() => addToFavorites(cocktail)} size='default' variant='outline' className='bg-gray-900 text-white'>
+                      Add to Favorites
+                    </Button>
+                  )}
               </CardFooter>
             </Card>
           );
