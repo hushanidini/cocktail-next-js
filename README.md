@@ -38,7 +38,7 @@ This is a Next.js project that allows users to explore and search for cocktails 
    git clone https://github.com/hushanidini/cocktail-next-js.git
    cd cocktail-next-js
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
