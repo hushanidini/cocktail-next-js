@@ -33,7 +33,7 @@ export default function Favorites() {
                 <img src={strDrinkThumb} alt={strDrink} className='w-full h-auto rounded-md' />
               </CardContent>
               <CardFooter className='flex justify-center'>
-                <Button onClick={() => removeFromFavorites(idDrink)} size='default' variant='outline' className='bg-red-600 text-white'>
+                <Button onClick={() => removeFromFavorites(idDrink)} size='default' variant='outline' className='bg-red-700 text-white'>
                   Remove
                 </Button>
               </CardFooter>
